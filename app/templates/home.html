@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<div class="block1">
+<h1>Hello {{user.username}}!</h1>
+<h2>Here is an interesting quote for you:</h2>
+"The limits of my language are the limits of my mind. All I know is what I have words for."
+{% for post in posts %}
+<p>{{post.author.username}} is studying </p>
+
+{% endfor %}
+</div>
+
+{% endblock %}
